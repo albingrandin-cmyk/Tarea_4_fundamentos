@@ -7,7 +7,7 @@ The script applies two dynamic range compression methods—**Homomorphic Filteri
 1. **Chromaticity Ratio Strategy ($\beta$):**
    $$C' = Y' \cdot \left(\max\left(\frac{C}{Y + \varepsilon},\, 0\right)\right)^\beta, \quad C \in \{R, G, B\}$$
 2. **Explicit HSV Saturation Scaling ($k_S$):**
-   $$S' = \operatorname{clip}(k_S \cdot S,\, 0,\, 1)$$
+   $$S' = \mathrm{clip}(k_S \cdot S,\, 0,\, 1)$$
    applied on top of the $\beta = 1.0$ base reconstruction.
 
 ---
